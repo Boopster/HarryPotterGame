@@ -8,13 +8,16 @@ const CharacterList = ({characters}) => {
     <CharacterCard
       key={id}
       characterName={c.name}
+      characterRole={c.role}
+      characterHouse={c.house}
+      characterSchool={c.school}
     />
   ))
 
   return (
     <>
       <h1 className="heading">Character List</h1>
-      {characterCards}
+        {characterCards}
     </>
   );
 };

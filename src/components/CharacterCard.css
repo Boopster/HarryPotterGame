@@ -1,8 +1,8 @@
 .character-card {
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: 'character-title character-title'
-                       'type type-description';
+  grid-template-areas: 'character-title'
+                       'description';
   border: 1px solid black;
   width: 600px;
   margin: 50px auto;
@@ -12,16 +12,12 @@
   grid-area: character-title;
   border-bottom: 1px solid black;
   font-family: "Magic School One";
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
-.type {
-  grid-area: type;
-}
-
-.type-description {
-  grid-area: type-description;
+.description {
+  grid-area: description;
 }
 
 h2 {
@@ -29,5 +25,16 @@ h2 {
 }
 
 p {
-  margin: 0;
+  margin: 30px auto;
+}
+
+.hide {
+  display: none;
+}
+
+th {
+  text-align: right;
+  font-family: "Magic School One";
+  font-size: 30px;
+  padding: 10px 20px;
 }
