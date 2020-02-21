@@ -1,0 +1,77 @@
+.spell-card {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 168px auto;
+  grid-template-areas: 'spell-title spell-title'
+                       'spell-image spell-details';
+  border: 1px solid black;
+  width: 600px;
+  margin: 50px auto;
+}
+
+.spell-title {
+  grid-area: spell-title;
+  border-bottom: 1px solid black;
+  padding-left: 30px;
+  font-family: "Magic School One";
+  font-size: 40px;
+}
+
+.spell-image {
+  grid-area: spell-image;
+  width: 128px;
+}
+
+.spell-details {
+  grid-area: spell-details;
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-columns: 70px auto;
+  grid-template-rows: 40px auto;
+  grid-template-areas: 'type type-description'
+                       'effect effect-description';
+  /* border: 1px solid black; */
+  /* width: 500px; */
+  /* margin: 50px auto; */
+}
+
+.type {
+  grid-area: type;
+  font-family: "Magic School One";
+  font-size: 30px;
+  margin: 0;
+  text-align: right;
+  padding: 10px auto;
+}
+
+.effect {
+  grid-area: effect;
+  font-family: "Magic School One";
+  font-size: 30px;
+  text-align: right;
+  padding: 10px auto;
+}
+
+.type-description {
+  grid-area: type-description;
+  padding: 15px;
+}
+
+.effect-description {
+  grid-area: effect-description;
+  padding: 15px;
+}
+
+.spell-image, .spell-details {
+  border: 1px solid black;
+  margin: 10px 20px 20px 20px;
+  padding: 10px;
+}
+
+h2 {
+  margin: 10px 0 5px 0;
+}
+
+p {
+  margin: 0;
+}

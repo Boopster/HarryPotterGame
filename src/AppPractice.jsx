@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import MainContainer from './containers/MainContainer';
+import SpellCard from './components/SpellCard';
 
-const App = () => {
+const AppPractice = () => {
 
   const [spells, setSpells] = useState([]);
 
@@ -21,11 +21,20 @@ const App = () => {
     loadSpellsData();
   }, []);
 
-  return (
-    <MainContainer
-      spells={spells}
+  const spellCards = spells.map((s, id) => (
+    <SpellCard
+      key={id}
+      spellName={s.spell}
+      spellType={s.type}
+      spellEffect={s.effect}
     />
+  ))
+
+  return (
+    <>
+      {spellCards}
+    </>
   );
 };
 
-export default App;
+export default AppPractice;
