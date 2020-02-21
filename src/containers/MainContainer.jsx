@@ -1,11 +1,20 @@
 import React from 'react';
+import NavBar from '../components/NavBar';
+import CharacterList from '../components/CharacterList';
 import SpellBook from '../components/SpellBook';
 
-const MainContainer = ({spells}) => {
+const MainContainer = ({characters, spells}) => {
   return (
-    <SpellBook
-      spells={spells}
-    />
+    <>
+      <NavBar
+      />
+      <CharacterList
+        characters={characters}
+      />
+      <SpellBook
+        spells={spells}
+      />
+    </>
   )
 }
 

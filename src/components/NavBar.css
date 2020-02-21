@@ -1,0 +1,17 @@
+li {
+  list-style: none;
+  margin: 50px 200px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-bar {
+  background-color: Black;
+  color: White;
+  font-family: "Magic School One";
+  font-size: 60px;
+}
