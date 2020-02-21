@@ -1,12 +1,15 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import SortingHat from '../components/SortingHat';
 import CharacterList from '../components/CharacterList';
 import SpellBook from '../components/SpellBook';
 
-const MainContainer = ({characters, spells}) => {
+const MainContainer = ({house, chooseHouse, characters, spells}) => {
+
   return (
     <>
-      <NavBar
+      <SortingHat
+        house={house}
+        chooseHouse={chooseHouse}
       />
       <CharacterList
         characters={characters}

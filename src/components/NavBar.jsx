@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({changePage}) => {
   return (
     <>
       <div className="nav-bar">

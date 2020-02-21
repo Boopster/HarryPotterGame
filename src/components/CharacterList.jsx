@@ -11,6 +11,13 @@ const CharacterList = ({characters}) => {
       characterRole={c.role}
       characterHouse={c.house}
       characterSchool={c.school}
+      characterAlias={c.alias}
+      characterAnimagus={c.animagus}
+      characterBoggart={c.boggart}
+      characterPatronus={c.patronus}
+      characterWand={c.wand}
+      characterBloodStatus={c.bloodStatus}
+      characterSpecies={c.species}
     />
   ))
 

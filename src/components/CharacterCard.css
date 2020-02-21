@@ -36,5 +36,17 @@ th {
   text-align: right;
   font-family: "Magic School One";
   font-size: 30px;
-  padding: 10px 20px;
+  padding: 10px 20px 20px 30px;
+  background-color: DarkGray;
+  width: 30%;
+}
+
+td {
+  padding: 10px 20px 20px 10px;
+  background-color: LightGray;
+  width: auto;
+}
+
+table {
+  margin: 15px auto 30px auto;
 }
